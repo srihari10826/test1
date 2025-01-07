@@ -1,1 +1,44 @@
-this is a test
+Docker
+----------
+FROM python:3.12
+WORKDIR /app1
+COPY app.py /app1
+CMD ["python","app.py"]
+
+app.py
+-------
+print("Hello World")
+
+docker build -t imagename:tagname .
+docker run imagename:tagname
+docker show images
+docker ps
+docker start containerid
+docker stop containerid
+docker pull hello-world 
+docker rmi 
+docker --version
+python --version
+
+GIT
+-----
+git config –-global user.name “admin”
+git config –-global user.email ashishmadaan6@gmail.com
+git config –-global --list
+git init
+git add test.txt
+git status
+git commit -m "comment"
+git branch dev1
+git checkout dev1
+git branch
+dir
+git log
+git ls-files
+git --version
+git remote add origin https://github.com/accountname/test1.git
+git push -u origin master
+git pull origin https://github.com/accountname/test1.git dev1
+git fetch origin https://github.com/accountname/test1.git dev1
+git merge dev1
+
